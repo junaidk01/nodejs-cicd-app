@@ -1,0 +1,5 @@
+﻿FROM node:18       # base OS
+WORKDIR /app       # working folder
+COPY . .           # copy code
+RUN npm install    # install deps
+CMD ["npm","start"] # run app
